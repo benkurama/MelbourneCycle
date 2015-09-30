@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/land_main_b1"
+    android:orientation="horizontal"
+    android:weightSum="100" android:id="@+id/landSlides">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent" android:layout_weight="17">
+
+        <FrameLayout
+            android:id="@+id/frameLayout6"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true" android:onClick="onMelbourne">
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#00000000"
+            android:onClick="onInfo"
+            android:padding="10dp"
+            android:text="More Info"
+            android:textColor="#372001"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="66"
+        android:orientation="vertical" android:weightSum="100">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:weightSum="90" >
+
+            <FrameLayout
+                android:id="@+id/frameLayout1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="30"
+                android:background="@drawable/land_button_fundraise_xml"
+                android:clickable="true"
+                android:onClick="onFundraise" >
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="20"
+                android:background="@drawable/land_button_contact_xml"
+                android:clickable="true"
+                android:onClick="onContacts" >
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout3"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="20"
+                android:background="@drawable/button_setting_xml"
+                android:clickable="true"
+                android:onClick="onSettings" >
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayout01"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="20"
+                android:background="@drawable/button_event_xml"
+                android:clickable="true"
+                android:onClick="onEvents" >
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40" >
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp" android:layout_weight="35">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" android:weightSum="100">
+
+                <FrameLayout
+                    android:id="@+id/frameLayout5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_weight="50">
+                </FrameLayout>
+
+                <ProgressBar
+                    android:id="@+id/progBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/land_progress_a1" android:scaleType="fitXY"/>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/tvRaised"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="$1000" android:textStyle="bold" android:textSize="20dp" android:textColor="#fbb307" android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:id="@+id/tvTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="$3000"
+                    android:textColor="#fbb307"
+                    android:textSize="20dp"
+                    android:textStyle="bold" android:layout_marginRight="20dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="17" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/powerdby" android:onClick="onCredits"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

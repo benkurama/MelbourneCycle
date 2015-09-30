@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<item android:id="@+id/manual" android:title="Add Contacts Manually" ></item>
+	<item android:id="@+id/refresh" android:title="Refresh Contacts" ></item>
+    <item android:id="@+id/selectAll" android:title="Select All" ></item>
+    <item android:id="@+id/unSelectAll" android:title="Unselect All" ></item>
+</menu>

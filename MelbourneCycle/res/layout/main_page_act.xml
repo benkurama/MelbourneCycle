@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20" android:background="@drawable/main_header_2" android:weightSum="100">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout8"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" android:layout_weight="15">
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout9"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="70"
+            android:background="@drawable/button_logo_xml"
+            android:clickable="true"
+            android:onClick="onMelbourne" >
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout9"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="15" >
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSlides"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="55"
+        android:background="@drawable/main_body_a1"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp" android:layout_weight="70">
+
+            <Button
+                android:id="@+id/btnInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:background="@drawable/info2x"
+                android:onClick="onInfo"
+                android:textColor="#fff"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:weightSum="80" >
+
+            <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="20"
+                android:background="@drawable/button_fundraise_xml"
+                android:clickable="true"
+                android:onClick="onFundraise" >
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout3"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="20"
+                android:background="@drawable/button_contacts_xml"
+                android:clickable="true"
+                android:onClick="onContacts" >
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout4"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="20"
+                android:background="@drawable/button_setting_xml"
+                android:clickable="true"
+                android:onClick="onSettings" >
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameLayout01"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="20"
+                android:background="@drawable/button_event_xml"
+                android:clickable="true"
+                android:onClick="onEvents" >
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:orientation="vertical" android:background="@drawable/main_footer_a1" android:weightSum="100">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp" android:layout_weight="80" android:weightSum="100">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent" android:layout_weight="5">
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout6"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent" android:layout_weight="90">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" android:weightSum="100" android:paddingLeft="3dp" android:paddingRight="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp" android:layout_weight="25">
+                    </RelativeLayout>
+
+                    <ProgressBar
+                        android:id="@+id/progBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp" android:layout_weight="50"/>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp" android:layout_weight="25">
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" android:background="@drawable/fundraisebar_a1" android:weightSum="100">
+
+                    <FrameLayout
+                        android:id="@+id/frameLayout7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" android:layout_weight="75">
+                    </FrameLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25" >
+
+                        <TextView
+                            android:id="@+id/tvRaised"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$0"
+                            android:textColor="#fff"
+                            android:textStyle="bold" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:textSize="12dp" android:layout_marginLeft="20dp"/>
+
+                        <TextView
+                            android:id="@+id/tvTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$0"
+                            android:textColor="#fff"
+                            android:textSize="12dp"
+                            android:textStyle="bold" android:layout_alignParentRight="true" android:layout_alignParentTop="true" android:layout_marginRight="30dp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent" android:layout_weight="5">
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout5"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp" android:layout_weight="20">
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:weightSum="100">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" android:layout_weight="40">
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout8"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="20" android:background="@drawable/powerdby" android:onClick="onCredits">
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="40" >
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
